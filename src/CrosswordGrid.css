@@ -1,0 +1,371 @@
+.canvas {
+  position: absolute;
+  overflow: hidden;
+
+
+ 
+}
+
+.background {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -33%); /* Center the element */
+  height: 79.6vw; /* Height relative to viewport width */
+  width: 66.3vw; /* Width relative to viewport width */
+  background-image: url('assets/images/tausta.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Remove the duplicate background-size property */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 4.3vw);
+  grid-template-rows: repeat(11, 4.42vw);
+  position: absolute;
+  top: calc(50% + 14.6vw); /* Adjust 20px to whatever value you need to move it down */
+  left: calc(50% + 0.9vw); /* Adjust 20px to whatever value you need to move it right */
+  transform: translate(-50%, -50%); /* This centers the grid based on its own size */
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 3px solid #000;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative; /* Position added here */
+}
+.invisible-input {
+  position: fixed; /* Fixed position to keep it out of the document flow */
+  top: 0; /* Place it at the top of the page */
+  left: 0; /* Place it at the start of the page */
+  opacity: 0;
+  height: 1px; /* Minimal height to prevent any layout impact */
+  width: 1px; /* Minimal width to prevent any layout impact */
+  z-index: -1; /* Place it behind other content */
+  pointer-events: none; /* Prevent it from capturing clicks */
+}
+
+.selected-item {
+  background-color: #6aa7cc;
+}
+
+.selected-vector {
+  background-color: lightblue;
+}
+
+
+.crossword-page {
+  display: flex;
+  justify-content: center; /* Centers the children horizontally */
+  align-items: start; /* Aligns children to the start of the cross axis */
+  padding: 20px;
+  flex-wrap: wrap; /* Allows children to wrap onto multiple lines */
+}
+
+.crossword-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+.crossword-flex-container {
+  overflow: auto;
+}
+
+
+  
+.special-1{
+  background-image: url('assets/images/1-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-bottom: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-2{
+  background-image: url('assets/images/2-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-top: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-3{
+  background-image: url('assets/images/3-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-4{
+  background-image: url('assets/images/4-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-right: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-5{
+  background-image: url('assets/images/5-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-left: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+.special-6{
+  background-image: url('assets/images/6-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-7{
+  background-image: url('assets/images/7-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-8{
+  background-image: url('assets/images/8-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  
+  border-right: white;
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-9{
+  background-image: url('assets/images/9-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+  border-left: white;
+  border-right: white;
+  border-bottom: white;
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-10{
+  background-image: url('assets/images/10-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  border-left: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-11{
+  background-image: url('assets/images/11-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-top: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-12{
+  background-image: url('assets/images/12-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-top: white;
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.special-13{
+  background-image: url('assets/images/13-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+
+.static-number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0.7em;
+  color: #333;
+  pointer-events: none;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1425px) {
+  /* CSS rules for screens smaller than 768px */
+  
+  .grid-item {
+    
+    border: 2px solid #000;
+    font-size: 32px;
+   
+  }
+  .static-number {
+    font-size: 16px;
+    top: 1px;
+    left: 3px;
+    
+  }
+  
+.button-container {
+  /* Set the width or max-width if necessary */
+  width: 10vw; /* or any appropriate width */
+  display: flex;
+  flex-direction: column; /* Stack the buttons vertically */
+  justify-content: flex-start;
+  margin-left: 900px;
+  margin-top: 50%;
+
+  position: absolute;
+
+  /* Add more styles if needed */
+}
+
+}
+
+
+@media (max-width: 1024px) {
+
+  /* Add bottom padding to the crossword grid container equivalent to the keyboard's height plus some extra space */
+  
+ 
+  .grid-item {
+    
+    border: 1px solid #000;
+    font-size: 26px;
+   
+  }
+  .static-number {
+    font-size: 14px;
+    top: 1px;
+    left: 3px;
+    
+  }
+}
+@media screen and (max-width: 650px) {
+  /* CSS rules for screens smaller than 768px */
+  
+  .grid-item {
+    
+    border: 1px solid #000;
+    font-size: 20px;
+   
+  }
+  .static-number {
+    font-size: 10px;
+    top: 1px;
+    left: 1px;
+    
+  }
+  .background {
+    position: absolute;
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -33%); /* Center the element */
+    height: 100.6vw; /* Height relative to viewport width */
+    width: 80.3vw; /* Width relative to viewport width */
+    
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 5.5vw);
+    grid-template-rows: repeat(11, 5.51vw);
+    position: absolute;
+    top: calc(50% + 17.8vw); /* Adjust 20px to whatever value you need to move it down */
+    left: calc(50% + 1.8vw); /* Adjust 20px to whatever value you need to move it right */
+    transform: translate(-50%, -50%); /* This centers the grid based on its own size */
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+  /* CSS rules for screens smaller than 768px */
+  
+  .grid-item {
+    
+    border: 1px solid #000;
+    font-size: 16px;
+   
+  }
+  .static-number {
+    font-size: 8px;
+    top: 1px;
+    left: 1px;
+    
+  }
+  .background {
+    position: absolute;
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -33%); /* Center the element */
+    height: 140.6vw; /* Height relative to viewport width */
+    width: 110.3vw; /* Width relative to viewport width */
+    
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 7.55vw);
+    grid-template-rows: repeat(11, 7.7vw);
+    position: absolute;
+    top: calc(50% + 24.8vw); /* Adjust 20px to whatever value you need to move it down */
+    left: calc(50% + 4.4vw); /* Adjust 20px to whatever value you need to move it right */
+    transform: translate(-50%, -50%); /* This centers the grid based on its own size */
+  }
+  
+}

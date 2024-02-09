@@ -1,0 +1,306 @@
+.custom-keyboard{
+    display: none;
+
+    
+}
+@media (min-width: 1401px) and (max-width: 1919px) {
+  .button-container {
+    position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+    right: 5px; /* Adjust as necessary for proper spacing */
+    top: 20px; /* Adjust to align with the top of the crossword grid */
+    width: auto; /* Allows the container to shrink-wrap the content */
+    max-width: 200px; /* Adjust the max-width as needed to prevent buttons from being too wide */
+    z-index: 2; /* Ensure it's above the grid if overlapping */
+    /* Remove margin-left */
+}
+.static-number {
+  font-size: 19px;
+  top: 1px;
+  left: 3px;
+  
+}
+.grid-item {
+    
+  border: 2px solid #000;
+  font-size: 42px;
+ 
+}
+}
+
+@media (max-width: 1400px) {
+  .button-container {
+    position: absolute; /* or 'fixed' if you want it to stay in place on scroll */
+    right: 20px; /* Adjust as necessary for proper spacing */
+    top: 20px; /* Adjust to align with the top of the crossword grid */
+    width: auto; /* Allows the container to shrink-wrap the content */
+    max-width: 200px; /* Adjust the max-width as needed to prevent buttons from being too wide */
+    z-index: 2; /* Ensure it's above the grid if overlapping */
+    /* Remove margin-left */
+}
+
+.button-container button {
+  /* Adjust button styles to be smaller and fit within the container */
+  padding: 5px 10px; /* Reduced padding */
+  font-size: 12px; /* Smaller font size */
+  margin: 0 2px; /* Small margin to keep buttons from touching */
+  min-width: 0; /* Allow buttons to shrink */
+  flex: 0 0 auto; /* Do not grow, do not shrink, and base size on content */
+}
+
+
+    .custom-keyboard-container {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%; /* Add this to start the container in the center */
+        transform: translateX(-50%); /* Add this to shift the container back to the center */
+        justify-content: center;
+        width: 100%; /* Stretch the container across the width of the screen */
+        max-width: 600px; /* Set a max-width to prevent it from getting too wide */
+        z-index: 1; /* Make sure this is not higher than the crossword grid's z-index */
+        /* ... other styles ... */
+    }
+
+    .custom-keyboard {
+        display: grid;
+        grid-template-columns: repeat(10, 3.3vw);
+        grid-template-rows: repeat(3, 3.42vw);
+       gap: 2px;
+       
+        
+        max-width: 600px; /* Or whatever maximum width you prefer */
+        opacity: 0.5;
+        
+        
+        
+        
+        
+        /* No need to set top, left, or bottom properties here as the container takes care of positioning */
+    }
+
+    .custom-keyboard button {
+      height: 36px; /* Ensure the height is enough for easy interaction */
+      max-width: 30px; /* Ensure the max-width fits the desired layout */
+      margin: 0; /* Remove margin to prevent extra spacing around buttons */
+      padding: 0 5px;
+       /* Set button background to slightly transparent white for contrast */
+      color: black;
+      font-size: large;
+    border: none;
+    background: #FFFFFF; /* Button background to white */
+
+        
+    }
+    .grid-item {
+    
+        border: 1px solid #000;
+        font-size: 26px;
+       
+      }
+      .static-number {
+        font-size: 12px;
+        top: 1px;
+        left: 3px;
+        
+      }
+      .canvas {
+        top: calc(30% + 3.6vw)
+      }
+      
+    }
+
+    @media (min-width: 401px)and (max-width: 600px) {
+
+      .custom-keyboard-container {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%; /* Add this to start the container in the center */
+        transform: translateX(-50%); /* Add this to shift the container back to the center */
+        justify-content: center;
+        margin-bottom: 27px;
+        width: 100%; /* Stretch the container across the width of the screen */
+        max-width: 750px; /* Set a max-width to prevent it from getting too wide */
+        z-index: 1; /* Make sure this is not higher than the crossword grid's z-index */
+        /* ... other styles ... */
+    }
+
+    .custom-keyboard {
+        display: grid;
+        grid-template-columns: repeat(10, 5.3vw);
+        grid-template-rows: repeat(3, 7.62vw);
+        column-gap: 4px; /* Set gap between columns */
+        row-gap: 4px; /* Set gap between rows */ /* Increase the gap size for more separation */
+        
+        
+        
+        max-width: 700px; }
+        .button-container {
+          position: fixed; 
+         top: 0;
+          height: auto; /* Auto height to contain the buttons */
+          right: 7px;
+          width: 9vw; /* Full width to use the entire screen width */
+          z-index: 10; /* Ensure it's above the keyboard container */
+         
+          padding: 10px 0; /* Add some padding at the top and bottom */
+          box-sizing: border-box; /* Include padding in the width calculation */
+          display: flex; /* Use flexbox for internal alignment */
+          flex-direction: column; /* Arrange flex items horizontally */
+          align-items: center; /* Center-align the flex items vertically */
+          justify-content: space-around; /* Distribute the items evenly with space around them */
+          
+          
+          max-width: 6vw;
+          background: none;
+        }
+      
+        .button-container button {
+          /* Adjust button styles to be smaller and fit within the container */
+          padding: 3px 9px; /* Reduced padding */
+          font-size: 6px; /* Smaller font size */
+          margin: 0 2px; /* Small margin to keep buttons from touching */
+          min-width: 0; /* Allow buttons to shrink */
+          flex: 0 0 auto; /* Do not grow, do not shrink, and base size on content */
+         margin-bottom: 2px;
+          border-radius: 5%;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+      .button-container {
+        position: fixed; 
+       top: 0;
+        height: auto; /* Auto height to contain the buttons */
+        right: 7px;
+        width: 9vw; /* Full width to use the entire screen width */
+        z-index: 10; /* Ensure it's above the keyboard container */
+       
+        padding: 10px 0; /* Add some padding at the top and bottom */
+        box-sizing: border-box; /* Include padding in the width calculation */
+        display: flex; /* Use flexbox for internal alignment */
+        flex-direction: column; /* Arrange flex items horizontally */
+        align-items: center; /* Center-align the flex items vertically */
+        justify-content: space-around; /* Distribute the items evenly with space around them */
+        
+       
+        
+        background: none;
+      }
+    
+      .button-container button {
+        /* Adjust button styles to be smaller and fit within the container */
+        padding: 2px 5px; /* Reduced padding */
+        font-size: 4px; /* Smaller font size */
+        margin: 0 2px; /* Small margin to keep buttons from touching */
+        min-width: 0; /* Allow buttons to shrink */
+        flex: 0 0 auto; /* Do not grow, do not shrink, and base size on content */
+       margin-bottom: 2px;
+        border-radius: 5%;
+      }
+ 
+        .custom-keyboard-container {
+            display: flex;
+            position: fixed;
+            bottom: 0;
+            left: 50%; /* Add this to start the container in the center */
+            transform: translateX(-50%); /* Add this to shift the container back to the center */
+            justify-content: center;
+            margin-bottom: 27px;
+            width: 100%; /* Stretch the container across the width of the screen */
+            max-width: 750px; /* Set a max-width to prevent it from getting too wide */
+            z-index: 1; /* Make sure this is not higher than the crossword grid's z-index */
+            /* ... other styles ... */
+        }
+    
+        .custom-keyboard {
+            display: grid;
+            grid-template-columns: repeat(10, 5.3vw);
+            grid-template-rows: repeat(3, 5.62vw);
+            column-gap: 6px; /* Set gap between columns */
+            row-gap: 6px; /* Set gap between rows */ /* Increase the gap size for more separation */
+            
+            
+            
+            max-width: 750px; /* Or whatever maximum width you prefer */
+            
+            
+            
+            
+            
+            
+            /* No need to set top, left, or bottom properties here as the container takes care of positioning */
+        }
+
+        .custom-keyboard button {
+          height: 36px; /* Ensure the height is enough for easy interaction */
+          width: auto; /* Allow the button to fill the grid cell */
+          margin: 0; /* Remove margin to prevent extra spacing around buttons */
+          padding: 0 5px; /* Horizontal padding */
+          background: #FFFFFF; /* Button background to white */
+          color: black;
+          font-size: large;
+          text-align: center; /* Center text horizontally */
+          line-height: 36px; /* Center text vertically */
+         border: none;
+          outline: none; /* Remove outline on focus */
+      }
+    
+   
+        .canvas {
+            top: calc(40% + 3.6vw);
+            margin-right: 150px;
+          }
+          .grid-item {
+    
+            border: 1px solid #000;
+            font-size: 18px;
+           
+          }
+          .static-number {
+            font-size: 9px;
+            top: 1px;
+            left: 2px;
+            
+          }
+
+    }
+
+    @media screen and (max-width: 1400px) and (orientation: landscape) {
+      .canvas {
+        top: calc(50% + 6.6vw);
+          /* For space at the bottom */
+    bottom: 200px;  /* Example with 'bottom' */
+    /* OR */
+    margin-bottom: 300px; /* Example with 'margin-bottom' */
+      }
+      .button-container{
+
+        right: -5px;
+      }
+      .button-container button {
+        /* Adjust button styles to be smaller and fit within the container */
+        padding: 5px 10px; /* Reduced padding */
+        font-size: 8px; /* Smaller font size */
+        margin: 0 2px; /* Small margin to keep buttons from touching */
+        min-width: 0; /* Allow buttons to shrink */
+        flex: 0 0 auto; /* Do not grow, do not shrink, and base size on content */
+       margin-bottom: 2px;
+        border-radius: 5%;
+      }
+      .custom-keyboard-container {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 50%; /* Add this to start the container in the center */
+        transform: translateX(-50%); /* Add this to shift the container back to the center */
+        justify-content: center;
+        margin-bottom: 27px;
+        width: 100%; /* Stretch the container across the width of the screen */
+        max-width: 750px; /* Set a max-width to prevent it from getting too wide */
+        z-index: 1; /* Make sure this is not higher than the crossword grid's z-index */
+        /* ... other styles ... */
+    }
+
+    }
