@@ -36,7 +36,7 @@ function createGridVectors() {
     const grid = [];
     const specialItems = [15, 25, 45, 57, 58, 60, 62, 64, 65, 66, 75, 85, 105];
     
-    const gridSize = 110; // Assuming a grid of size 110
+    const gridSize = 120; // Assuming a grid of size 110
 
     for (let i = 1; i <= gridSize; i++) {
         let isSpecial = specialItems.includes(i);

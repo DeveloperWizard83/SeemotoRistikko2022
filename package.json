@@ -1,5 +1,5 @@
 {
-  "name": "ristikko2021",
+  "name": "ristikko2022",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -35,5 +35,20 @@
     "vite": "^5.0.12",
     "webpack": "^5.89.0",
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperWizard83/SeemotoRistikko2022.git"
+  },
+  "keywords": [
+    "ristikko2022"
+  ],
+  "author": "Mika Laakso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeveloperWizard83/SeemotoRistikko2022/issues"
+  },
+  "homepage": "https://github.com/DeveloperWizard83/SeemotoRistikko2022#readme"
 }
