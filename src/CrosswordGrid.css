@@ -20,11 +20,11 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(10, 3.4vw);
-  grid-template-rows: repeat(12, 3.5vw);
+  grid-template-columns: repeat(10, 3.5vw);
+  grid-template-rows: repeat(12, 3.57vw);
   position: absolute;
   top: calc(50% + 9.6vw); /* Adjust 20px to whatever value you need to move it down */
-  left: calc(50% + 2.9vw); /* Adjust 20px to whatever value you need to move it right */
+  left: calc(50% + 3.32vw); /* Adjust 20px to whatever value you need to move it right */
   transform: translate(-50%, -50%); /* This centers the grid based on its own size */
 }
 
@@ -241,7 +241,7 @@
   position: absolute;
   top: 5px;
   left: 5px;
-  font-size: 0.7em;
+  font-size: 0.5em;
   color: #333;
   pointer-events: none;
   font-weight: 800;
