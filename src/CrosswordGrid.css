@@ -76,19 +76,7 @@
   align-items: flex-start;
   gap: 20px;
 }
-.button-container {
-  /* Set the width or max-width if necessary */
-  width: 200px; /* or any appropriate width */
-  display: flex;
-  flex-direction: column; /* Stack the buttons vertically */
-  justify-content: flex-start;
-  margin-right: -150px;
-  margin-top: 50%;
 
-  position: fixed;
-
-  /* Add more styles if needed */
-}
 
 .special-1{
   background-image: url('assets/images/1-kysymys.png');
@@ -121,8 +109,8 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
-  
-  
+  border-right: white;
+  border-bottom: white;
   pointer-events: none;
   background-color: white;
 
@@ -131,12 +119,12 @@
 .special-4{
   background-image: url('assets/images/4-kysymys.png');
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 80%;
   background-position: center center;
-  border-right: white;
-  
-  pointer-events: none;
+  border-left: white;
   background-color: white;
+  pointer-events: none;
+  
 
 }
 
@@ -145,7 +133,7 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
-  border-left: white;
+  border-right: white;
   
   pointer-events: none;
   background-color: white;
@@ -157,7 +145,7 @@
   background-size: 90%;
   background-position: center center;
   
-  
+  border-left:white ;
   pointer-events: none;
   background-color: white;
 
@@ -168,8 +156,8 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
-  
-  
+  border-left:white ;
+  border-right: white;
   pointer-events: none;
   background-color: white;
 
@@ -180,8 +168,9 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
-  
-  border-right: white;
+  border-left:white ;
+  border-bottom: white;
+  border-top:white ;
   pointer-events: none;
   background-color: white;
 
@@ -190,10 +179,11 @@
 .special-9{
   background-image: url('assets/images/9-kysymys.png');
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 90%;
   background-position: center center;
-  border-left: white;
-  border-right: white;
+  border-top:white ;
+ 
+  
   border-bottom: white;
   pointer-events: none;
   background-color: white;
@@ -203,10 +193,9 @@
 .special-10{
   background-image: url('assets/images/10-kysymys.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 85%;
   background-position: center center;
-  border-left: white;
-  
+  border-top:white ;
   pointer-events: none;
   background-color: white;
 
