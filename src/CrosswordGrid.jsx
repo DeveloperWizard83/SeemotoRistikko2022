@@ -19,7 +19,9 @@ const specialClassMapping = {
     77: 'special-11',
     78: 'special-12',
     79: 'special-13',
-    80: 'special-14'
+    80: 'special-14',
+    95: 'special-15',
+    115: 'special-16',
 };
 
 
@@ -35,7 +37,7 @@ const staticNumberMapping = {
 
 function createGridVectors() {
     const grid = [];
-    const specialItems = [15, 25, 45,46, 52, 53, 54, 55, 64, 65, 66, 75, 77, 78,79, 80];
+    const specialItems = [15, 25, 45,46, 52, 53, 54, 55, 64, 65, 66, 75, 77, 78,79, 80,95, 115];
     
     const gridSize = 120; // Assuming a grid of size 110
 

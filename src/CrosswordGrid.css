@@ -206,8 +206,8 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
-  border-top: white;
   
+  border-right:white ;
   pointer-events: none;
   background-color: white;
 
@@ -218,8 +218,8 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
-  border-top: white;
-  
+  border-left:white ;
+  border-right:white ;
   pointer-events: none;
   background-color: white;
 
@@ -230,7 +230,40 @@
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center center;
+  border-left:white ;
+  border-right: white;
+  pointer-events: none;
+  background-color: white;
+
+}
+.special-14{
+  background-image: url('assets/images/14-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  border-left:white ;
   
+  pointer-events: none;
+  background-color: white;
+
+}
+.special-15{
+  background-image: url('assets/images/15-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+  
+  
+  pointer-events: none;
+  background-color: white;
+
+}
+.special-16{
+  background-image: url('assets/images/16-kysymys.png');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+ 
   
   pointer-events: none;
   background-color: white;
