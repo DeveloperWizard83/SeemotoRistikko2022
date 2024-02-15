@@ -5,9 +5,9 @@
   display: flex;
   flex-direction: column; /* Stack the buttons vertically */
   justify-content: flex-start;
-margin-left: 850px;
-  margin-top: 50%;
 
+  margin-top: 30%;
+  margin-left: 420px;
   position: fixed;
 
   /* Add more styles if needed */

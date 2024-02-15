@@ -26,12 +26,15 @@ const specialClassMapping = {
 
 
 const staticNumberMapping = {
-    23: 1,
-    29: 2,
-    42: 3,
-    70: 4,
-    93: 5,
-    107: 6
+    1: 1,
+    16: 2,
+    33: 3,
+    41: 4,
+    64: 5,
+    83: 6,
+    109: 7,
+    111: 8,
+    116: 9
     // ... other static number mappings
 };
 

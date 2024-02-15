@@ -18,7 +18,7 @@ const solution = { 1: 'L',2: 'A',3: 'A',4: 'T',5: 'O',6: 'I',7: 'T',
   // Add all other cell IDs and their correct letters
 };
 
-const ButtonContainer = ({ onEraseClick, gridContentRef, selectedItemId}) => {
+const ButtonContainer = ({ onEraseClick, gridContentRef, selectedItemId, showButtonPanel, toggleButtonPanel}) => {
 
     const [isHelpModalVisible, setIsHelpModalVisible] = useState(false);
 
@@ -140,8 +140,10 @@ alert(`Olet ratkaissut ristikosta ${correctnessPercentage} prosenttia.`);
       console.error('Error generating PDF: ', error);
     });
   };
-  
+  const [isVisible, setIsVisible] = useState(false);
   return (
+    
+    <div className={`button-container ${showButtonPanel ? 'visible' : ''}`}>
     <div className="button-container">
       <button id="helpButton" className="help-button non-printable" onClick={handleHelpClick}>Ohjeet</button>
       <button className='check-word-button' onClick={handleCheckClick}>Tarkista ratkaisusana</button>
@@ -169,6 +171,7 @@ alert(`Olet ratkaissut ristikosta ${correctnessPercentage} prosenttia.`);
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };
