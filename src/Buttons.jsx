@@ -4,17 +4,18 @@ import jsPDF from 'jspdf';
 import './Buttons.css'; // This imports the CSS styles
 
 
-const solution = { 1: 'L',2: 'A',3: 'A',4: 'T',5: 'O',6: 'I',7: 'T',
-8: 'T',9: 'A',10: 'A',11: 'A',12: 'L',13: 'L',14: 'U',16: 'T',17: 'A',18: 'A',19: 'I',
-20: 'N',21: 'H',22: 'A',23: 'K',24: 'U',26: 'A',27: 'S',28: 'T',29: 'O',30: 'N',
-31: 'J',32: 'O',33: 'U',34: 'L',35: 'U',36: 'L',37: 'A',38: 'U',39: 'L',40: 'U',
-41: 'A',42: 'S',43: 'I',44: 'A',46: 'I',47: 'N',48: 'T',49: 'I',50: 'T',
-51: 'K',52: 'A',53: 'H',54: 'T',55: 'I',56: 'A',59: 'P', 61: 'O',63: 'M',67: 'A',68: 'S',
-69: 'U',70: 'T',71: 'R',72: 'A',73: 'I',74: 'T',76: 'A',77: 'P',78: 'U',79: 'R',80: 'I',
-81: 'T',82: 'I',83: 'N',84: 'O',86: 'T',87: 'I',88: 'N',89: 'K',90: 'E',
-91: 'I',92: 'T',93: 'E',94: 'R',95: 'O',96:'I',97: 'N',98: 'N',99: 'I', 100: 'T',
-101: 'T',102: 'O',103: 'N',104: 'I',106: 'K',107: 'A',108: 'A',109: 'T',110: 'O'
- 
+const solution = {
+  1: 'P', 2: 'I', 3: 'P', 4: 'A', 5: 'R', 6: 'K', 7: 'A', 8: 'K', 9: 'U', 10: 'T',
+  11: 'A', 12: 'S', 13: 'U', 14: 'T', 16: 'U', 17: 'L', 18: 'O', 19: 'K', 20: 'E',
+  21: 'P', 22: 'O', 23: 'R', 24: 'O', 26: 'H', 27: 'A', 28: 'N', 29: 'K', 30: 'S',
+  31: 'E', 32: 'T', 33: 'U', 34: 'M', 35: 'A', 36: 'A', 37: 'S', 38: 'T', 39: 'O', 40: 'T',
+  41: 'R', 42: 'A', 43: 'T', 44: 'I', 47: 'A', 48: 'I', 49: 'N', 50: 'A',
+  51: 'I', 56: 'E', 57: 'L', 58: 'K', 59: 'E', 60: 'T', 61: 'P', 62: 'E', 63: 'T', 64: 'O', 66: 'L',
+  67: 'I', 68: 'I', 69: 'N', 70: 'A', 71: 'U', 72: 'T', 73: 'A', 74: 'H', 76: 'O',
+  81: 'S', 82: 'U', 83: 'P', 84: 'E', 85: 'R', 86: 'V', 87: 'A', 88: 'L', 89: 'T', 90: 'A',
+  91: 'S', 92: 'I', 93: 'S', 94: 'E', 95: 'T', 96: 'U', 97: 'S',
+  101: 'I', 102: 'L', 103: 'O', 104: 'S', 105: 'A', 106: 'N', 107: 'O', 108: 'M', 109: 'A', 110: 'T',
+  111: 'T', 112: 'U', 113: 'T', 114: 'A', 115: 'A', 116: 'N', 117: 'I', 118: 'T', 119: 'A'
   // Add all other cell IDs and their correct letters
 };
 
@@ -33,8 +34,8 @@ const ButtonContainer = ({ onEraseClick, gridContentRef, selectedItemId, showBut
     const handleCheckClick = () => {
       // Assuming staticNumberMapping's order corresponds to the word "MITTAUS"
       // and that gridContentRef.current holds the current letters keyed by itemId
-      const correctWord = "KOSTEA";
-      const letterPositions = [23, 29, 42, 70, 93, 107]; // Ids for "KOSTEA"
+      const correctWord = "PUUROPATA";
+      const letterPositions = [1, 16, 33, 41, 64, 83,109,111,116]; // Ids for "correctword"
       let formedWord = '';
 
       for (let pos of letterPositions) {
