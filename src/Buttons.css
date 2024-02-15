@@ -2,14 +2,14 @@
 
 .button-container {
     /* Set the width or max-width if necessary */
-    width: 8vw; /* or any appropriate width */
+    width: 200px; /* or any appropriate width */
     display: flex;
     flex-direction: column; /* Stack the buttons vertically */
     justify-content: flex-start;
-    margin-left: 1420px;
+    margin-right: -150px;
     margin-top: 50%;
   
-    position: absolute;
+    position: fixed;
   
     /* Add more styles if needed */
   }
