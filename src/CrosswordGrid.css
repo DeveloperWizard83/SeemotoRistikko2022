@@ -359,11 +359,11 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, 5.9vw);
-    grid-template-rows: repeat(12, 5.91vw);
+    grid-template-columns: repeat(10, 6vw);
+    grid-template-rows: repeat(12, 6.2vw);
     position: absolute;
-    top: calc(50% + 17.8vw); /* Adjust 20px to whatever value you need to move it down */
-    left: calc(50% + 1.8vw); /* Adjust 20px to whatever value you need to move it right */
+    top: calc(50% + 15.5vw); /* Adjust 20px to whatever value you need to move it down */
+    left: calc(55% + 1vw); /* Adjust 20px to whatever value you need to move it right */
     transform: translate(-50%, -50%); /* This centers the grid based on its own size */
   }
   
@@ -377,7 +377,7 @@
   }
   .grid-item {
     
-    border: 1px solid #000;
+   
     font-size: 16px;
    
   }
