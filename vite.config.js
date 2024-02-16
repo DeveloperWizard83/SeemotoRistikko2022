@@ -6,7 +6,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   // Conditionally set the base path for GitHub Pages deployment
-  base: '/ristikko2022/',
+  base: '/SeemotoRistikko2022/',
 
   plugins: [react()],
   server: {
