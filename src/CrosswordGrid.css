@@ -319,8 +319,9 @@
  
   .grid-item {
     
-    border: 1px solid #000;
+   
     font-size: 26px;
+
    
   }
   .static-number {
@@ -332,10 +333,12 @@
 }
 @media screen and (max-width: 650px) {
   /* CSS rules for screens smaller than 768px */
-  
+  .canvas{
+    margin-top: -50px;
+  }
   .grid-item {
     
-    border: 1px solid #000;
+    
     font-size: 20px;
    
   }
@@ -350,14 +353,14 @@
     top: 25%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -33%); /* Center the element */
-    height: 100.6vw; /* Height relative to viewport width */
+    height: 110.6vw; /* Height relative to viewport width */
     width: 80.3vw; /* Width relative to viewport width */
     
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, 5.5vw);
-    grid-template-rows: repeat(11, 5.51vw);
+    grid-template-columns: repeat(10, 5.9vw);
+    grid-template-rows: repeat(12, 5.91vw);
     position: absolute;
     top: calc(50% + 17.8vw); /* Adjust 20px to whatever value you need to move it down */
     left: calc(50% + 1.8vw); /* Adjust 20px to whatever value you need to move it right */

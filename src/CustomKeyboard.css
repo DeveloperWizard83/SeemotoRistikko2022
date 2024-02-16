@@ -52,12 +52,7 @@
 
         
     }
-    .grid-item {
-    
-        border: 1px solid #000;
-        font-size: 26px;
-       
-      }
+   
       .static-number {
         font-size: 12px;
         top: 1px;
@@ -137,7 +132,7 @@
         right: 7px;
         width: 9vw; /* Full width to use the entire screen width */
         z-index: 10; /* Ensure it's above the keyboard container */
-       margin-left: 100px;
+       
         padding: 10px 0; /* Add some padding at the top and bottom */
         box-sizing: border-box; /* Include padding in the width calculation */
         display: flex; /* Use flexbox for internal alignment */
@@ -215,7 +210,6 @@
           }
           .grid-item {
     
-            border: 1px solid #000;
             font-size: 18px;
            
           }
