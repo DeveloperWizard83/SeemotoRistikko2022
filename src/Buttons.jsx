@@ -96,6 +96,10 @@ alert(`Olet ratkaissut ristikosta ${correctnessPercentage} prosenttia.`);
 
 
   const handleDownloadClick = () => {
+    // Optionally lock the body width to prevent layout shifts
+    const bodyWidth = document.body.offsetWidth;
+    document.body.style.width = `${bodyWidth}px`;
+  
     // Temporarily adjust styles for capture
     const originalStyles = {
       overflow: document.querySelector('.canvas').style.overflow,
@@ -103,8 +107,8 @@ alert(`Olet ratkaissut ristikosta ${correctnessPercentage} prosenttia.`);
       transform: document.querySelector('.background').style.transform
     };
     const buttonContainer = document.querySelector('.button-container');
-    const originalDisplay = buttonContainer.style.display;
-    buttonContainer.style.display = 'none'; // Hide buttons
+    const originalVisibility = buttonContainer.style.visibility;
+    buttonContainer.style.visibility = 'hidden'; // Hide buttons using visibility
   
     // Adjust styles for capture
     document.querySelector('.canvas').style.overflow = 'visible';
@@ -116,16 +120,21 @@ alert(`Olet ratkaissut ristikosta ${correctnessPercentage} prosenttia.`);
     // Use html2canvas to capture the crossword container
     html2canvas(crosswordContainerElement, {
       scale: 1,
-      logging: true,
-      onclone: (document) => {
-        // Modify cloned document styles here if necessary
-      }
-    }).then(capturedCanvas => {
+    logging: true,
+    onclone: (clonedDocument) => {
+      const clonedGridContainer = clonedDocument.querySelector('.grid-container');
+      // Apply a negative margin to the left or adjust the left property
+      // This example assumes that the grid-container has a left CSS property set.
+      // You need to adjust the '3.32vw' value to find the correct amount of shift needed.
+      clonedGridContainer.style.left = `calc(53% - 0.3vw)`; // Adjust this value accordingly
+    }
+  }).then(capturedCanvas => {
       // Restore original styles after capture
       document.querySelector('.canvas').style.overflow = originalStyles.overflow;
       document.querySelector('.background').style.position = originalStyles.position;
       document.querySelector('.background').style.transform = originalStyles.transform;
-      buttonContainer.style.display = originalDisplay;
+      buttonContainer.style.visibility = originalVisibility; // Restore original visibility
+      document.body.style.width = ''; // Unlock the body width
   
       const imgData = capturedCanvas.toDataURL('image/png');
       const pdf = new jsPDF({
@@ -141,6 +150,7 @@ alert(`Olet ratkaissut ristikosta ${correctnessPercentage} prosenttia.`);
       console.error('Error generating PDF: ', error);
     });
   };
+  
   const [isVisible, setIsVisible] = useState(false);
   return (
     
