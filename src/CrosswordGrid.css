@@ -369,6 +369,9 @@
 @media screen and (max-width: 550px) {
   /* CSS rules for screens smaller than 768px */
   
+  .canvas{
+    margin-top: -50px;
+  }
   .grid-item {
     
     border: 1px solid #000;
@@ -386,20 +389,22 @@
     top: 25%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -33%); /* Center the element */
-    height: 140.6vw; /* Height relative to viewport width */
-    width: 110.3vw; /* Width relative to viewport width */
+    height: 138.6vw; /* Height relative to viewport width */
+    width: 95.3vw; /* Width relative to viewport width */
     
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(10, 7.55vw);
-    grid-template-rows: repeat(11, 7.7vw);
+    grid-template-columns: repeat(10, 7.45vw);
+    grid-template-rows: repeat(12, 7.7vw);
     position: absolute;
-    top: calc(50% + 24.8vw); /* Adjust 20px to whatever value you need to move it down */
-    left: calc(50% + 4.4vw); /* Adjust 20px to whatever value you need to move it right */
-    transform: translate(-50%, -50%); /* This centers the grid based on its own size */
+    top: calc(50% + 17.9vw); /* Adjust 20px to whatever value you need to move it down */
+    left: calc(50% + 3.8vw); /* Adjust 20px to whatever value you need to move it right */
+    transform: translate(-43%, -50%); /* This centers the grid based on its own size */
   }
-  
+  .button-container{
+    margin-right: -40px;
+  }
 }
 
   
