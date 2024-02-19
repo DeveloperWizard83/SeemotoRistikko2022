@@ -420,6 +420,9 @@
     max-width: 60px;
     
   }
+  .grid-item{
+    font-size: 16px;
+  }
  
 }
 
