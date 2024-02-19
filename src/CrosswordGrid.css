@@ -409,6 +409,20 @@
     
   }
 }
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+
+  .static-number{
+    font-size: 6px;
+  }
+  .button-container{
+    margin-right: -50px;
+    max-width: 60px;
+    
+  }
+ 
+}
+
 @media screen and (max-width: 650px) {
   /* CSS rules for screens smaller than 650px */
   
