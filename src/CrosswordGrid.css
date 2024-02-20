@@ -504,6 +504,15 @@
   .button-container{
     margin-right: -40px;
   }
+  .button-container button:first-child {
+    /* Custom styles for the first button */
+   width: 30px;
+}
+.button-container button:nth-child(2) {
+  /* Custom styles for the first button */
+ width: 31px;
+}
+
 }
 
   
