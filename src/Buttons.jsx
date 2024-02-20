@@ -45,7 +45,7 @@ const ButtonContainer = ({ onEraseClick, gridContentRef, selectedItemId, showBut
       if (formedWord.toUpperCase() === correctWord) {
           alert("Hienoa, ratkaisusana on oikein"); // Using alert for simplicity
       } else {
-          alert("Ratkaisusana ei ole oikea, yritä uudestaan");
+          alert("Ratkaisusana ei ole oikein, yritä uudestaan");
       }
   };
 
