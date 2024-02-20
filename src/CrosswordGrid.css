@@ -239,12 +239,13 @@
 .special-14{
   background-image: url('assets/images/14-kysymys.png');
   background-repeat: no-repeat;
-  background-size: 90%;
+  background-size: 100%;
   background-position: center center;
-  border-left:white ;
   
   pointer-events: none;
   background-color: white;
+  border-left: none;
+  border-right: 2px solid black;
 
 }
 .special-15{
